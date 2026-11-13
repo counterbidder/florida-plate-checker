@@ -85,6 +85,7 @@ Requires Python 3.9+ (tkinter is included with the standard Windows installer).
 | `build.bat` / `installer.iss` | Build and installer scripts |
 | `app.ico`, `logo.png`, `version_info.txt` | Icon, header logo, exe file properties |
 | `tools/make_icon.py` | Regenerates the icon (developers only) |
+| `LICENSE` | MIT license |
 
 ## Responsible use
 
@@ -94,4 +95,4 @@ responsible for how you use it.
 
 ## License
 
-Add your preferred license here (for example MIT) before publishing.
+[MIT](LICENSE)
