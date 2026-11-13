@@ -84,8 +84,7 @@ classification, not proof that the application contains a backdoor.
 | `make_icon.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/06506d3ea8b714c489bfe77c3727a4821f50b1cb9544d7129c9f8e5e6610ed12) |
 
 VirusTotal results are point-in-time scans and can change as antivirus vendors
-update their detections. A zero-detection result does not guarantee that a file
-is completely safe. The executable's isolated detection is disclosed above so
+update their detections. The executable's isolated detection is disclosed above so
 users can review the full report and make their own assessment.
 
 ## Run from source
