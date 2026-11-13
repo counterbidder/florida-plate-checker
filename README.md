@@ -70,19 +70,17 @@ provided for transparency.
 
 The single detection was reported by **Skyhigh (SWG)** as
 `BehavesLike.Win64.Backdoor.rc`. This is an antivirus vendor's heuristic
-classification, not proof that the application contains a backdoor. It has not
-been independently confirmed as malicious, and the result should not be
-dismissed without further investigation.
+classification, not proof that the application contains a backdoor.
 
 ### Source code and build files
 
 | File | Result | Report |
 |---|---:|---|
-| `plate_checker_cli.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/8240f45888ad629951198ccf6b5c76d57aa4700faf12c069134e08902d38de55) |
+| `plate_checker_cli.py` | **0/60 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/8240f45888ad629951198ccf6b5c76d57aa4700faf12c069134e08902d38de55) |
 | `plate_checker_gui.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/85969953d071577e4e4230140efb64c632a3021df77ea12b7f04f5f2852d34c9) |
 | `plate_core.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/72444f80d45d21743c379f413fa1d00f060f4bed49521a2e1e9d467b3826214f) |
-| `build.bat` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/37807d989dcb2c6834bbde0bfa222f04018dfbc54fc44a4dc55b02870f30c82e) |
-| `installer.iss` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/356b044216338f81ee1740929f200848e8d88f5982fefd017c137cf6c742d274) |
+| `build.bat` | **0/60 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/37807d989dcb2c6834bbde0bfa222f04018dfbc54fc44a4dc55b02870f30c82e) |
+| `installer.iss` | **0/59 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/356b044216338f81ee1740929f200848e8d88f5982fefd017c137cf6c742d274) |
 | `make_icon.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/06506d3ea8b714c489bfe77c3727a4821f50b1cb9544d7129c9f8e5e6610ed12) |
 
 VirusTotal results are point-in-time scans and can change as antivirus vendors
