@@ -39,9 +39,9 @@ Notepad and restart the scan.
 
 ## Results
 
-Each scan creates `results\available_plates_YYYYMMDD_HHMMSS.txt` with the settings
+Each scan creates `results\\available_plates_YYYYMMDD_HHMMSS.txt` with the settings
 used, every available plate, and totals. If the app folder isn't writable, results go
-to `Documents\FloridaPlateChecker\results`.
+to `Documents\\FloridaPlateChecker\\results`.
 
 ## Troubleshooting
 
@@ -56,6 +56,40 @@ to `Documents\FloridaPlateChecker\results`.
 - **The site changed and everything errors**: the app depends on the layout of the
   DHSMV page, so a site update can break it. Check for a newer version.
 
+## VirusTotal Security Scans
+
+The release executable and supporting source/build files were submitted to
+[VirusTotal](https://www.virustotal.com/) for analysis. The results below are
+provided for transparency.
+
+### Release executable
+
+| File | Result | Report |
+|---|---:|---|
+| `FloridaPlateChecker.exe` | **1/71 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/f066bf12141d61348fd0515ef7eceee5c94895f93c62e2f3808dcc7ffeeb0351) |
+
+The single detection was reported by **Skyhigh (SWG)** as
+`BehavesLike.Win64.Backdoor.rc`. This is an antivirus vendor's heuristic
+classification, not proof that the application contains a backdoor. It has not
+been independently confirmed as malicious, and the result should not be
+dismissed without further investigation.
+
+### Source code and build files
+
+| File | Result | Report |
+|---|---:|---|
+| `plate_checker_cli.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/8240f45888ad629951198ccf6b5c76d57aa4700faf12c069134e08902d38de55) |
+| `plate_checker_gui.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/85969953d071577e4e4230140efb64c632a3021df77ea12b7f04f5f2852d34c9) |
+| `plate_core.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/72444f80d45d21743c379f413fa1d00f060f4bed49521a2e1e9d467b3826214f) |
+| `build.bat` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/37807d989dcb2c6834bbde0bfa222f04018dfbc54fc44a4dc55b02870f30c82e) |
+| `installer.iss` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/356b044216338f81ee1740929f200848e8d88f5982fefd017c137cf6c742d274) |
+| `make_icon.py` | **0/62 detections** | [View VirusTotal report](https://www.virustotal.com/gui/file/06506d3ea8b714c489bfe77c3727a4821f50b1cb9544d7129c9f8e5e6610ed12) |
+
+VirusTotal results are point-in-time scans and can change as antivirus vendors
+update their detections. A zero-detection result does not guarantee that a file
+is completely safe. The executable's isolated detection is disclosed above so
+users can review the full report and make their own assessment.
+
 ## Run from source
 
 ```
@@ -69,10 +103,10 @@ Requires Python 3.9+ (tkinter is included with the standard Windows installer).
 
 1. Install Python from python.org (tick **Add Python to PATH**).
 2. Double-click **build.bat**.
-3. Find the app in `dist\FloridaPlateChecker\` and a shareable zip next to it.
+3. Find the app in `dist\\FloridaPlateChecker\\` and a shareable zip next to it.
 4. Optional: install [Inno Setup](https://jrsoftware.org/isinfo.php) first and
-   `build.bat` will also produce a Setup.exe in `installer_output\`.
-5. The icon (`app.ico`) and Windows file details (`version_info.txt`) are already set up. Edit `version_info.txt` to put your own name in the exe's Properties, and run `tools\make_icon.py` (needs `pip install pillow`) if you want to regenerate the icon.
+   `build.bat` will also produce a Setup.exe in `installer_output\\`.
+5. The icon (`app.ico`) and Windows file details (`version_info.txt`) are already set up. Edit `version_info.txt` to put your own name in the exe's Properties, and run `tools\\make_icon.py` (needs `pip install pillow`) if you want to regenerate the icon.
 
 ## Files
 
