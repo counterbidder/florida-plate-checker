@@ -1,0 +1,8 @@
+.venv/
+build/
+dist/
+installer_output/
+__pycache__/
+*.spec
+results/
+tools/icon_preview.png

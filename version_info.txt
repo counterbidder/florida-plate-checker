@@ -1,0 +1,30 @@
+# UTF-8
+# Windows file properties for the .exe (right-click > Properties > Details).
+# Edit CompanyName / LegalCopyright to your name or brand.
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 0, 0, 0),
+    prodvers=(1, 0, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable('040904B0', [
+        StringStruct('CompanyName', 'Florida Plate Checker'),
+        StringStruct('FileDescription', 'Florida Plate Checker'),
+        StringStruct('FileVersion', '1.0.0.0'),
+        StringStruct('InternalName', 'FloridaPlateChecker'),
+        StringStruct('LegalCopyright', 'Copyright (c) 2026'),
+        StringStruct('OriginalFilename', 'FloridaPlateChecker.exe'),
+        StringStruct('ProductName', 'Florida Plate Checker'),
+        StringStruct('ProductVersion', '1.0.0.0')
+      ])
+    ]),
+    VarFileInfo([VarStruct('Translation', [1033, 1200])])
+  ]
+)
